@@ -6,51 +6,52 @@
     <meta name="keywords" content="이탈리아, 자유여행">
     <meta name="description" content="">
     <title>이탈리아 자유여행</title>
-    <link rel="shortcut icon" href="파비콘 경로" type="image/x-icon">
-    <link rel="icon" href="파비콘 경로" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/Heart.png" type="image/x-icon">
+    <link rel="icon" href="./images/Heart.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <!-- 1. title -->
     <section class="title_bg">
         <div class="title">
-            <p>누구나 한번쯤 꿈꾸는 여행지 이탈리아로 떠나보세요!</p>
-            <p><img src="# " alt=""></p>
+            <p class="top_title">누구나 한번쯤 꿈꾸는 여행지 이탈리아로 떠나보세요!</p>
+            <p class="flag"><img src="./images/icon/Flag.png" alt=""></p>
             <h1>Hellow <br>
                 italia !</h1>
-            <p>이탈리아 자유여행 당신의 마음을 사로잡다!</p>
+            <p class="btm_title"><em>이탈리아 자유여행</em> 당신의 마음을 사로잡다!</p>
         </div>
     </section>
     <!-- 2. route (경로) -->
     <section class="route_bg">
         <div class="route">
             <div class="mini_title">
-                <h2>Italy Free Travel Guide</h2>
+                <h1>Italy Free Travel Guide</h1>
                 <p>자유여행 관광 경로</p>
             </div>
-            <div class="sequence">
-                <p>
-                    밀라노<img src="#" alt="">
-                    베니스<img src="#" alt="">
-                    돌로미티<img src="#" alt="">
-                    피렌체<img src="#" alt="">
-                    친퀘테레<img src="#" alt="">
-                    로마
+            <div class="contents">
+                <p class="list">
+                    <span>밀라노</span><img src="./images/icon/east.png" alt="">
+                    <span>베니스</span><img src="./images/icon/east.png" alt="">
+                    <span>돌로미티</span><img src="./images/icon/east.png" alt="">
+                    <span>피렌체</span><img src="./images/icon/east.png" alt="">
+                    <span>친퀘테레</span><img src="./images/icon/east.png" alt="">
+                    <span>로마</span>
                 </p>
+                <p class="map"><img src="./images/map_jin.png" alt=""></p>
             </div>
-            <p><img src="#" alt=""></p>
         </div>
     </section>
     <!-- 3. quiz -->
     <section class="quiz_bg">
         <div class="quiz">
             <div class="mini_title">
-                <h2>Quiz</h2>
+                <h1>Quiz</h1>
                 <p>이탈리아 관광지 1위 알아보기 !</p>
             </div>
             <div class="contents">
                 <div class="left">
-                    <h3>가고싶은 이탈리아 관광지 1위는 어디인가요?</h3>
+                    <h2>가고싶은 이탈리아 관광지 1위는 어디인가요?</h2>
                     <form id="quiz_frm" action="#" method="get">
                         <fieldset>
                             <legend class="skip">퀴즈</legend>
@@ -76,13 +77,16 @@
                                     </label>
                                 </li>
                             </ul>
+                            <button type="submit" id="answer_btn">정답 확인 하기</button>
                         </fieldset>
                     </form>
                 </div>
                 <div class="right">
-                    <h2><img src="#" alt=""><span>이탈리아 관광지 1위 현황</span></h2>
-                    <p class="contents"><em>밀라노</em>(2580표)</p>
-                    <p class="update">*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+                    <div class="current">
+                        <h2><img src="./images/icon/Italy.png" alt=""><span>이탈리아 관광지 1위 현황</span></h2>
+                        <p class="content"><em>밀라노</em><span>(2580표)</span></p>
+                    </div>
+                    <p>*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
                 </div>
             </div>
         </div>
@@ -97,32 +101,32 @@
             <div class="contents">
                 <ul>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/milano.jpg" alt="">
                         <h3>밀라노</h3>
                         <p>북부 롬바르디아주의 주도, ‘패션의 중심지’</p>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/ven_copy.jpg" alt="">
                         <h3>베니스</h3>
                         <p>북동부 베네토주의 주도, ‘물의 도시’</p>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/dolomity.jpg" alt="">
                         <h3>돌로미티</h3>
                         <p>알프스 산맥의 일부, ‘UNESCO 세계자연유산’</p>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/florence.jpg" alt="">
                         <h3>피렌체</h3>
                         <p>중부 토스카나주의 주도, ‘중세의 아테네’</p>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/chin_copy.jpg" alt="">
                         <h3>친퀘테레</h3>
                         <p>다섯개의 마을, ‘UNESCO 세계유산’</p>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/tourism/rome_2.jpg" alt="">
                         <h3>로마</h3>
                         <p>이탈리아의 수도, ‘예술과 건축의 도시’</p>
                     </li>
@@ -134,53 +138,53 @@
     <section class="food_bg">
         <div class="food">
             <div class="mini_title">
-                <h2>Italian Food</h2>
+                <h1>Italian Food</h1>
                 <p>이탈리아만의 맛을 볼 수 있는 전통음식!</p>
             </div>
             <div class="contents">
                 <ul>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/pizza.jpg" alt="">
                         <p>이탈리아의 대표 전통 음식</p>
                         <h3>피자</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/pasta.jpg" alt="">
                         <p>이탈리아의 대표 전통 음식</p>
                         <h3>파스타</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/risotto.jpg" alt="">
                         <p>이탈리아의 전통 쌀요리</p>
                         <h3>리조또</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/cacciatore.jpg" alt="">
                         <p>이탈리아의 가정식 닭요리</p>
                         <h3>카치아토레</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/aranchini copy.jpg" alt="">
                         <p>이탈리아의 전통 튀김</p>
                         <h3>아란치니</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/ribollita.jpg" alt="">
                         <p>이탈리아의 전통 수프</p>
                         <h3>리볼리타</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/tiramisu copy.jpg" alt="">
                         <p>이탈리아의 대표 디저트</p>
                         <h3>티라미수</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/gelato_2 copy.jpg" alt="">
                         <p>이탈리아의 전통 아이스크림</p>
                         <h3>젤라또</h3>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/food/nunetine copy.jpg" alt="">
                         <p>누네띠네로 알려진 이탈리아의 디저트</p>
                         <h3>스폴리아티네 글라사테</h3>
                     </li>
@@ -192,7 +196,7 @@
     <section class="video_bg">
         <div class="video">
             <div class="mini_title">
-                <h2>Italy Free Travel Story</h2>
+                <h1>Italy Free Travel Story</h1>
                 <p>평화롭고 자유로운 이탈리아 자유여행 스토리</p>
             </div>
             <!-- 비디오자리 -->
@@ -202,27 +206,27 @@
     <section class="package_bg">
         <div class="package">
             <div class="mini_title">
-                <h2>Italy Free Travel Package</h2>
+                <h1>Italy Free Travel Package</h1>
                 <p>자유여행 패키지로  마음껏 즐기세요!</p>
             </div>
             <div class="contents">
                 <ul>
                     <li>
-                        <img src="#" alt="">
-                        <div class="right">
+                        <img src="./images/package/hotel copy.jpg" alt="">
+                        <div class="left">
                             <h4>이태리일주 (+ 남부) 8일 #공항픽업 #투어 #일급호텔</h4>
                             <p>출발기간 2023.07.20~ 2023.12.31</p>
                         </div>
-                        <div class="left">
+                        <div class="right">
                             <p>2,430,000 원~</p>
                             <a href="#" class="departday">
                                 <span>출발일 보기</span>
-                                <img src="#" alt="">
+                                <img src="./images/icon/arrow_forward_ios.png" alt="">
                             </a>
                         </div>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/package/paris.jpg" alt="">
                         <div class="right">
                             <h4>파리 + 베니스 + 로마 8일 #공합픽업 #현지투어</h4>
                             <p>출발기간 2023.07.20~ 2023.07.31</p>
@@ -231,12 +235,12 @@
                             <p>3,640,000 원~</p>
                             <a href="#" class="departday">
                                 <span>출발일 보기</span>
-                                <img src="#" alt="">
+                                <img src="./images/icon/arrow_forward_ios.png" alt="">
                             </a>
                         </div>
                     </li>
                     <li>
-                        <img src="#" alt="">
+                        <img src="./images/package/roma.jpg" alt="">
                         <div class="right">
                             <h4>파리 + 베니스 + 피렌체 + 로마 10일 #공항픽업 #가이드투어</h4>
                             <p>출발기간 2023.07.20~ 2023.12.31</p>
@@ -245,7 +249,7 @@
                             <p>3,250,000 원~</p>
                             <a href="#" class="departday">
                                 <span>출발일 보기</span>
-                                <img src="#" alt="">
+                                <img src="./images/icon/arrow_forward_ios.png" alt="">
                             </a>
                         </div>
                     </li>
