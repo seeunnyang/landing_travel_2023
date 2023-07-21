@@ -14,7 +14,7 @@ section .mini_title h1 {
     margin-bottom: 30px;
 }
 section .mini_title p {
-    font-size: 1.2rem; font-weight: 500; 
+    font-size: 1.2rem;
     letter-spacing: -0.02em; color: #fff7ae;
     margin-bottom: 50px;
 }
@@ -30,7 +30,8 @@ section .mini_title p {
     align-items: center; 
     position: relative; color: #fff;
 }
-.title_bg .title .top_title {font-weight: 500; letter-spacing: -0.02em; margin-bottom: 30px;}
+.title_bg .title .top_title {letter-spacing: -0.02em; margin-bottom: 30px;}
+.title_bg .title .top_title em {font-weight: 700;}
 .title_bg .title .flag {position: absolute; left: 710px; top: 170px;}
 .title_bg .title .flag img {}
 .title_bg .title h1 {
@@ -63,7 +64,7 @@ section .mini_title p {
     background: #fff; border-radius: 25px;
     padding: 15px 20px;
     font-size: 1.44rem; letter-spacing: -0.02em;
-    margin: 0 20px;
+    margin: 0 20px; color: #555;
 }
 .route_bg .route .contents .list img {width: 20px; height: 20px;}
 .route_bg .route .contents .map {}
@@ -83,10 +84,12 @@ background-size: cover;
     color: #fff;
 }
 .quiz_bg .quiz .contents .left {}
-.quiz_bg .quiz .contents .left h2 {font-size: 1.728rem; font-weight: 500; letter-spacing: -0.02em;}
+.quiz_bg .quiz .contents .left h2 {display: flex; flex-flow: row nowrap; align-items: center;}
+.quiz_bg .quiz .contents .left h2 img {margin-right: 10px;}
+.quiz_bg .quiz .contents .left h2 p {font-size: 1.728rem; font-weight: 500; letter-spacing: -0.02em;}
 .quiz_bg .quiz .contents .left #quiz_frm {}
 .quiz_bg .quiz .contents .left #quiz_frm fieldset {}
-.quiz_bg .quiz .contents .left #quiz_frm fieldset ul {margin-top: 10px;}
+.quiz_bg .quiz .contents .left #quiz_frm fieldset ul {margin:10px 0 0 10px;}
 .quiz_bg .quiz .contents .left #quiz_frm fieldset ul li {margin-top: 25px;}
 .quiz_bg .quiz .contents .left #quiz_frm fieldset ul li label {}
 .quiz_bg .quiz .contents .left #quiz_frm fieldset ul li label input {
@@ -97,7 +100,7 @@ background-size: cover;
     background-position:0%;
     background-size:;
     padding-left: 25px;
-    font-size: 1.44rem; font-weight: 500; letter-spacing: -0.02em;
+    font-size: 1.44rem; letter-spacing: -0.02em;
 }
 .quiz_bg .quiz .contents .left #quiz_frm fieldset ul li label input:checked+span {
     background:url(../images/icon/check.png) no-repeat;
@@ -111,7 +114,7 @@ background-size: cover;
 }
 .quiz_bg .quiz .contents .right {
     display: flex; flex-flow: column nowrap; align-items: center;}
-.quiz_bg .quiz .contents .right .current {width: 500px; margin-bottom: 35px;}
+.quiz_bg .quiz .contents .right .current {width: 500px; margin-bottom: 15px;}
 .quiz_bg .quiz .contents .right .current h2 {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: center; padding: 25px 0;
     background: #a1c298;
@@ -137,7 +140,7 @@ background-size: cover;
     font-weight: 700; letter-spacing: -0.02em;
 }
 .quiz_bg .quiz .contents .right .content span {
-    color: #000; font-size: 1.44rem; 
+    color: #555; font-size: 1.44rem; 
     font-weight: 500; letter-spacing: -0.02em;
 }
 .quiz_bg .quiz .contents .right p{font-weight: 500; letter-spacing: -0.02em;}
@@ -154,8 +157,11 @@ background-size: cover;
 }
 .tourism_bg .tourism .contents ul li {
     color: #fff;
-    display: flex; flex-flow: column nowrap; align-items: center;
+    display: flex; flex-flow: column nowrap; align-items: center; 
+    margin-bottom: 70px;
 }
+.tourism_bg .tourism .contents ul li:nth-child(5),
+.tourism_bg .tourism .contents ul li:nth-child(6) {margin-bottom: 0;}
 .tourism_bg .tourism .contents ul li:nth-child(2n+1) {margin-right: 50px;}
 .tourism_bg .tourism .contents ul li img {
     width: 550px; height: 385px;
@@ -173,20 +179,37 @@ background-size: cover;
     margin-bottom: 20px;
 }
 .tourism_bg .tourism .contents ul li p {
-    font-size: 1.44rem; font-weight: 500; letter-spacing: -0.02em; 
+    font-size: 1.2rem; letter-spacing: -0.02em; 
 }
 /* 5. food */
-.food_bg {background-color: lightblue;}
+.food_bg {background:#674747;}
 .food_bg .food {}
 .food_bg .food .mini_title {}
 .food_bg .food .mini_title h1 {}
-.food_bg .food .mini_title p {}
+.food_bg .food .mini_title p {color: #FA7070;}
 .food_bg .food .contents {}
-.food_bg .food .contents ul {}
-.food_bg .food .contents ul li {}
-.food_bg .food .contents ul li img {width: 200px; height: 150px;}
-.food_bg .food .contents ul li p {}
-.food_bg .food .contents ul li h3 {}
+.food_bg .food .contents ul {display: flex; flex-flow: row wrap;}
+.food_bg .food .contents ul li {
+    color: #fff;
+    display: flex; flex-flow: column nowrap; align-items: center; 
+    margin-bottom: 70px; margin-right: 50px;
+}
+.food_bg .food .contents ul li:nth-child(3n) {margin-right: 0;}
+.food_bg .food .contents ul li img {
+    width: 350px; height: 350px; border-radius: 50%; 
+    margin-bottom: 15px;
+}
+.food_bg .food .contents ul li:nth-child(7),
+.food_bg .food .contents ul li:nth-child(8),
+.food_bg .food .contents ul li:nth-child(9) {margin-bottom: 0;}
+.food_bg .food .contents ul li p {letter-spacing: -0.02em; margin-bottom: 15px;}
+.food_bg .food .contents ul li h3 {
+    background: #FA7070; 
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.44rem; font-weight: 500; letter-spacing: -0.02em;
+}
 /* 6. video */
 .video_bg {background-color: lightseagreen;}
 .video_bg .video {}
