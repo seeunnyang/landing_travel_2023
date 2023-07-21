@@ -64,7 +64,7 @@ section .mini_title p {
     background: #fff; border-radius: 25px;
     padding: 15px 20px;
     font-size: 1.44rem; letter-spacing: -0.02em;
-    margin: 0 20px; color: #555;
+    margin: 0 20px; color: #333;
 }
 .route_bg .route .contents .list img {width: 20px; height: 20px;}
 .route_bg .route .contents .map {}
@@ -140,7 +140,7 @@ background-size: cover;
     font-weight: 700; letter-spacing: -0.02em;
 }
 .quiz_bg .quiz .contents .right .content span {
-    color: #555; font-size: 1.44rem; 
+    color: #333; font-size: 1.44rem; 
     font-weight: 500; letter-spacing: -0.02em;
 }
 .quiz_bg .quiz .contents .right p{font-weight: 500; letter-spacing: -0.02em;}
@@ -211,21 +211,35 @@ background-size: cover;
     font-size: 1.44rem; font-weight: 500; letter-spacing: -0.02em;
 }
 /* 6. video */
-.video_bg {background-color: lightseagreen;}
+.video_bg {
+    background:url(../images/florence.jpg) no-repeat fixed center;
+    background-size: cover;
+}
 .video_bg .video {}
 .video_bg .video .mini_title {}
 .video_bg .video .mini_title h1 {}
 .video_bg .video .mini_title p {}
 .video_bg .video /* 비디오자리 */{}
 /* 7. package */
-.package_bg {background-color: lightsalmon;}
-.package_bg .package {}
+.package_bg {background:url(../images/rome_bg.jpg) no-repeat fixed center;
+background-size: cover;}
+.package_bg::after {
+    /* content:'';
+    display: block; width: 100%; height: 100%;
+    background:rgba(255,255,255,0.7);
+    position:absolute; left:0; top:0; z-index:90; */
+}
+/* .package_bg .package {z-index:100} */
 .package_bg .package .mini_title {}
 .package_bg .package .mini_title h1 {}
 .package_bg .package .mini_title p {}
 .package_bg .package .contents {}
 .package_bg .package .contents ul {}
-.package_bg .package .contents ul li {}
+.package_bg .package .contents ul li {
+    width:1200px;
+    display: flex; flex-flow: row nowrap;
+    background: #fff;
+}
 .package_bg .package .contents ul li > img {width: 200px; height: 150px;}
 .package_bg .package .contents ul li .left {}
 .package_bg .package .contents ul li .left h4 {}
