@@ -219,7 +219,7 @@ background-size: cover;
 .video_bg .video .mini_title {}
 .video_bg .video .mini_title h1 {}
 .video_bg .video .mini_title p {}
-.video_bg .video /* 비디오자리 */{}
+.video_bg .video iframe {width: 800px; height: 500px;}
 /* 7. package */
 .package_bg {background:url(../images/rome_bg.jpg) no-repeat fixed center;
 background-size: cover;}
@@ -237,15 +237,41 @@ background-size: cover;}
 .package_bg .package .contents ul {}
 .package_bg .package .contents ul li {
     width:1200px;
-    display: flex; flex-flow: row nowrap;
-    background: #fff;
+    display: flex; flex-flow: row nowrap; 
+    align-items: center; 
+    background: #fff; 
 }
 .package_bg .package .contents ul li > img {width: 200px; height: 150px;}
-.package_bg .package .contents ul li .left {}
-.package_bg .package .contents ul li .left h4 {}
-.package_bg .package .contents ul li .left p {}
-.package_bg .package .contents ul li .right {}
-.package_bg .package .contents ul li .right p {}
-.package_bg .package .contents ul li .right .departday {}
-.package_bg .package .contents ul li .right .departday span {}
-.package_bg .package .contents ul li .right .departday img {}
+.package_bg .package .contents ul li .info {
+    width: 1000px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.package_bg .package .contents ul li .info .left {color: #333; margin-left: 20px;}
+.package_bg .package .contents ul li .info .left h4 {
+    font-size: 1.2rem; font-weight: 500; letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+.package_bg .package .contents ul li .info .left p {
+    font-size: 0.833rem; letter-spacing: -0.02em;
+}
+.package_bg .package .contents ul li .info .right {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;
+    color: #FA7070;
+}
+.package_bg .package .contents ul li .info .right p {
+    letter-spacing: -0.02em; margin-right: 20px;
+}
+.package_bg .package .contents ul li .info .right p em {
+    font-size: 1.44rem; font-weight: 500; 
+    letter-spacing: -0.02em;
+}
+.package_bg .package .contents ul li .info .right .departday {
+    background: #eee; padding: 10px 20px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-right: 10px;
+}
+.package_bg .package .contents ul li .info .right .departday span {
+    color: #333; 
+    font-size: 0.833rem; letter-spacing: -0.02em; margin-right: 10px;
+}
+.package_bg .package .contents ul li .info .right .departday img {width: 20px; height: 20px;}
