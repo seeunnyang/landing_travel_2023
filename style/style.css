@@ -20,7 +20,7 @@ section .mini_title p {
 }
 /* 1. title */
 .title_bg {
-    background: url(../images/florence_003.jpg) no-repeat fixed center /* 150% */;
+    background: url(../images/florence_bg.jpg) no-repeat fixed center /* 150% */;
     background-size: cover; height:100vh;
 }
 .title_bg .title {
@@ -39,17 +39,15 @@ section .mini_title p {
 .title_bg .title .flag {position: absolute; left:750px; top:183px;}
 .title_bg .title .flag img {}
 .title_bg .title h1 {
-    padding-top:10px;
-    font-size: 9.375rem;
-    line-height:125px;
-    letter-spacing: -0.02em;
+    padding-top:10px; margin-bottom:10px;
+    font-size: 9.375rem; line-height:125px;
+    letter-spacing:-0.02em;
     background: var(--italy, linear-gradient(90deg, #2EBC83 22.4%, #000 48.96%, #F96666 75%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Sofia', cursive;
     text-align: center;
-    margin-bottom:10px;
 }
 .title_bg .title .btm_title {font-size: 1.44rem; letter-spacing: -0.02em;}
 .title_bg .title .btm_title em {font-size: 1.44rem; font-weight: 700;}
@@ -75,7 +73,6 @@ section .mini_title p {
 .route_bg .route .contents .list img {width: 20px;}
 .route_bg .route .contents .map {width:550px;}
 .route_bg .route .contents .map img {width:100%;}
-/* .route_bg .route .contents .map img:hover {box-shadow: 3px 3px 5px 3px #000;} */
 /* 3. quiz */
 .quiz_bg {
     background:url(../images/rome_bg.jpg) no-repeat fixed center;
@@ -297,7 +294,7 @@ section .mini_title p {
     background:#a1c298;
 }
 .package_bg .package .contents ul li .info .right .departday:hover span {
-    color: #fff;
+    color:#fff;
 }
 .package_bg .package .contents ul li .info .right .departday span {
     color: #333; font-weight:500;
