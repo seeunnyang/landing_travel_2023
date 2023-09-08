@@ -181,13 +181,17 @@ section .mini_title p {
     width: 550px; height: 385px;
     border-radius: 50px;
     margin-bottom: 20px;
-
+    transition:transform.5s;
+}
+.tourism_bg .tourism .contents ul li img:hover {
+    transform:scale(1.05);
+    transition:transform.5s;
+    box-shadow: 3px 3px 10px 5px #222;
 }
 .tourism_bg .tourism .contents ul li h3 {
     background: #a1c298; 
     font-size: 1.728rem; font-weight: 700; letter-spacing: -0.02em;
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline-block; padding: 10px 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-bottom: 20px;
@@ -212,6 +216,12 @@ section .mini_title p {
 .food_bg .food .contents ul li img {
     width: 350px; height: 350px; border-radius: 50%; 
     margin-bottom: 15px;
+    transition:transform.3s;
+}
+.food_bg .food .contents ul li img:hover {
+    transform:scale(1.05);
+    transition:transform.3s;
+    box-shadow: 3px 3px 10px 5px #222;
 }
 .food_bg .food .contents ul li:nth-child(7),
 .food_bg .food .contents ul li:nth-child(8),
